@@ -1,3 +1,44 @@
 {
-    "Project":[]
+  "products": {
+    "iphone": {
+      "img": "https://avatars.mds.yandex.net/i?id=adeb0feb05ec9b465db75e66024f3f6c220732a6-5875590-images-thumbs&n=137",
+      "title": "iPhone 17 Pro Max",
+      "article": "MFXH4 (E-Sim)",
+      "price": "142 000",
+      "stock": "В наличии",
+      "colors": "Оранжевый, Серый, Тёмно-синий",
+      "memory": "256GB, 512GB, 1TB, 2TB",
+      "model": "eSIM + eSIM или nanoSIM + eSIM"
+    },
+    "ipad": {
+      "img": "https://avatars.mds.yandex.net/i?id=9f0f18f4b1e9724a3803b301b0dd4365a40e6cad-9203641-images-thumbs&n=137",
+      "title": "iPad Pro",
+      "article": "IPD2026",
+      "price": "128 000",
+      "stock": "В наличии",
+      "colors": "Серебристый, Космический серый",
+      "memory": "256GB, 512GB, 1TB",
+      "model": "Wi-Fi или Wi-Fi + Cellular"
+    },
+    "mac": {
+      "img": "https://avatars.mds.yandex.net/i?id=4f0b9789bad83ebf6cb87b88b0b6fd337ff32e4b-8485986-images-thumbs&n=137",
+      "title": "MacBook Pro",
+      "article": "MFXH4 (E-Sim)",
+      "price": "128 000",
+      "stock": "В наличии",
+      "colors": "Серебристый, Космический серый",
+      "memory": "256GB, 512GB, 1TB",
+      "model": "Wi-Fi или Wi-Fi + Cellular"
+    },
+    "apple-watch": {
+      "img": "https://avatars.mds.yandex.net/i?id=89af58f625aa130d0d43eaf9f7043871258e55f0-5679382-images-thumbs&n=137",
+      "title": "Apple Watch",
+      "article": "AW2026",
+      "price": "60 000",
+      "stock": "В наличии",
+      "colors": "Серебристый, Космический серый",
+      "memory": "256GB, 512GB, 1TB",
+      "model": "Wi-Fi или Wi-Fi + Cellular"
+    }
+  }
 }
