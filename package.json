@@ -2,6 +2,14 @@
   "name": "solo-project-29.06",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/maksatovichislam-create/solo-project#readme",
+  "bugs": {
+    "url": "https://github.com/maksatovichislam-create/solo-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maksatovichislam-create/solo-project.git"
+  },
   "license": "ISC",
   "author": "",
   "type": "commonjs",
@@ -11,5 +19,6 @@
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.15"
-  }
+  },
+  "devDependencies": {}
 }

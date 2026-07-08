@@ -572,147 +572,165 @@
 
 
 
-.footer {
-  background: #f9f9f9;
-  padding: 40px;
-  font-family: Arial, sans-serif;
-  color: #000000;
-}
-
-.footer-top {
-  display: flex;
-  justify-content: space-between; 
-  align-items: start;
-  margin-bottom: 200px;
-}
-
-.footer-top h3 {
-  font-size: 40px;
-  font-weight: 600;
-  margin-left: 140px;
-  margin-top: 40px;
+.footer{
+    width:100%;
+    font-family:Arial,sans-serif;
 }
 
 
-.footer-top-links {
-  display: flex;
-  gap: 10px; /* расстояние между двумя блоками */
-  flex-direction: column;
+.footer-top{
+    max-width:1200px;
+    margin:0 auto;
+    padding:60px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    background:#ffffff;
+}
+
+.footer-top h3{
+    font-size:45px;
+    font-weight:600;
+    line-height:1.1;
+    color:#1d1d1f;
+    margin:0;
+}
+
+.footer-top-links{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+.footer-top-links p{
+    margin:0 0 5px;
+    color:#1d1d1f;
+    font-size:16px;
+}
+
+.footer-top-links a{
+    color:#0071e3;
+    text-decoration:none;
+}
+
+.footer-top-links a:hover{
+    text-decoration:underline;
 }
 
 
 
-.footer-top-links p {
-  font-size: 15px;
-  margin: 0 0 4px 0;
-  color: #000000; /* обычный текст */
-  margin-top: 30px;
+.footer-dark{
+    width:100%;
+    background:#1d1d1f;
 }
 
-.footer-top-links a {
-  font-size: 14px;
-  color: #0071e3; /* фирменный синий */
-  text-decoration: none;  
+.footer-columns{
+    max-width:1200px;
+    margin:0 auto;
+    padding:60px 20px;
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
 }
 
-.footer-top-links a:hover {
-  text-decoration: underline;
+.footer-col h4{
+    color:#fff;
+    margin-bottom:18px;
 }
 
-/* .footer-columns {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 30px;
-} */
-.footer-columns {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 0;
-  background: #111;  
-  padding: 40px;
+.footer-col ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.footer-col li{
+    color:#b5b5b5;
+    margin-bottom:12px;
+}
+
+.footer-col a{
+    color:#0a84ff;
+    text-decoration:none;
+}
+
+.footer-bottom{
+    max-width:1200px;
+    margin:0 auto;
+    padding:25px 20px;
+    border-top:1px solid #3a3a3c;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.footer-bottom p{
+    color:#999;
+    margin:0;
+    font-size:13px;
+}
+
+.footer-links{
+    display:flex;
+    gap:25px;
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.footer-links li{
+    color:#999;
+    font-size:13px;
+}
+/* 
+адаптивка */
+
+@media(max-width:768px){
+
+.footer-top{
+    flex-direction:column;
+    gap:35px;
+}
+
+.footer-top h3{
+    font-size:42px;
+}
+
+.footer-columns{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+}
+
+.footer-bottom{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
 
 }
 
-.footer-col h4 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  margin-left: 140px;
-  color: #fff;
+@media(max-width:450px){
+
+.footer-top{
+    padding:40px 15px;
 }
 
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-left: 70px;
+.footer-top h3{
+    font-size:32px;
 }
 
-.footer-col li {
-  font-size: 14px;
-  margin-bottom: 6px;
-  margin-left: 70px;
-  color: #808080;
+.footer-columns{
+    grid-template-columns:1fr;
+    padding:40px 15px;
 }
 
-.footer-col a {
-  color: #0071e3;
-  text-decoration: none;
+.footer-bottom{
+    padding:20px 15px;
 }
 
-.footer-col a:hover {
-  text-decoration: underline;
+.footer-links{
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
-.footer-bottom {
-  border-top: 1px solid #ffffff;
-  padding-top: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #111; 
-  
 }
-
-.footer-bottom p {
-  font-size: 13px;
-  color: #666;
-}
-
-.footer-links {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  font-size: 13px;
-  color: #0071e3;
-  cursor: pointer;
-}
-
-
-/* адаптив */
-@media (max-width: 768px) {
-  .footer-columns {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .footer-bottom {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-  .footer-top {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .footer-top-links {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
-
